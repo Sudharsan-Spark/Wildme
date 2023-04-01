@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wildme!!</title>
+    <style>
+        body {
+            background-image:url("bg8.jpg");
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        } 
+        .navbar{
+            background-color: rgb(5, 71, 15);
+            border: 2px solid black;
+            border-radius: 30px;           
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none; 
+            margin: 13px 20px;
+            font-family:'Gill Sans MT';
+            font-size:x-large;            
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+            
+        }
+        .navbar li a:hover{
+            color: red
+        }
+        .search{
+            float: right;
+            color: rgb(255, 153, 0);
+            padding: 12px 30px;
+            font-family:'Gill Sans MT';
+            font-size: x-large;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 30px;
+            padding: 3px 17px;
+            width: 129px;
+            height:30px;
+        }
+        .content{
+            font-family:'Gill Sans MT';
+            font-size:medium;
+            color:black;
+            left:20px;
+            margin:0 auto;
+            width: 90%;
+
+        }
+        img {
+        width: 400px;
+        height: 300px;
+        border:2px solid black;
+        border-radius: 30px;
+        }
+        img:hover{
+            transform: scale(1.1);;
+        }
+
+        p
+        {font-size:large;
+        }
+        footer {
+        display:block;
+        text-align: center;
+        padding: 3px;
+        background-color: rgb(5, 71, 15);
+        color: white;
+        border:2px solid black;
+        border-radius:30px;
+
+        }
+        button{
+        border-width:2px;
+        width:50px;
+        height:25px;
+        font-size:medium;
+        }
+        
+    </style>
+     <script>
+        function myGiraffe() {
+          document.getElementById("demo1").innerHTML = "Giraffes are the tallest animal on land.<br>The giraffe has a long and slender neck.<br>It has a spotted body.<br>It is a gentle animal with smooth skin.<br>The giraffe has a long face, long neck, two large eyes, and hair on its back.<br>That is a stiff mane with two short horns on the head.<br>The legs are as tall as a grown man.<br>The spots are brown or almost black in color.<br>Each giraffe has a pattern of spots.<br>But no two giraffes have the same pattern.";
+        }
+        function myLion() {
+          document.getElementById("demo2").innerHTML = "Living in the grasslands, scrub, and open woodlands of sub-Saharan Africa, the lion is the second largest cat in the world.<br>It is dwarfed slightly by the tiger, which is closely related and has a very similar body type.<br>Unlike other cats, lions are very social animals.<br>They live in groups, called prides, of around 30 lions.<br>A pride consists of up to three males, a dozen related females, and their young.<br>The size of the pride is determined by the availability of food and water."
+        }
+        function myTiger() {
+          document.getElementById("demo3").innerHTML = "The tiger is the largest living member of the cat family, the Felidae.<br>It lives in Asia, mainly India, Bhutan, China, Korea and Siberian Russia.<br>Tigers are solitary animals.<br>Tigers have orange fur with black stripes, and a white belly.<br>The black stripes usually extend to the white underside.<br>The stripes are used to keep them camouflaged while hunting.<br>Usually, two tigers have the same pattern of stripes.";
+        }
+        function myCheetah() {
+          document.getElementById("demo4").innerHTML = "The cheetah is the fastest land animal on Earth.<br>This spotted member of the cat family can sprint faster than 70 miles (112 kilometers) per hour.<br>Small black spots cover most of the cheetah’s sandy yellow fur.<br>The belly is white, and the tail is marked with dark rings.<br>Black lines run from the eyes to the corners of the mouth.<br>Cheetahs live alone or in small groups.<br>They hunt small animals, mainly during the day.<br>After creeping up on an animal, a cheetah sprints at it from a few hundred feet away.";
+        }
+        function myElephant() {
+          document.getElementById("demo5").innerHTML = "Elephants are the largest living land animals.<br>There are three species, or kinds: the African savanna elephant, the African forest elephant, and the Asian elephant.<br>They make up the elephant family of mammals.<br>Elephants’ skin is thick, wrinkled, and not very hairy.<br>It is grayish to brown in color.<br>An elephant’s trunk is an extension of the nose and upper lip.<br>An elephant uses its trunk to grab food and to put it into the mouth.<br>Elephants migrate, or travel, in search of food.<br>They eat only plants, including grasses.<br>They often rest during the hottest hours of the day.";
+        }
+    </script>
+</head>
+
+<body>
+    <header >
+        <nav class="navbar">
+            <ul>
+                <li><a href="My_Project.html">Home</a></li>
+                <li><a href="https://www.nwf.org/Educational-Resources/Wildlife-Guide">Species</a></li>
+                <li><a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/wildlife-habitat#:~:text=Wildlife%20habitat%20are%20areas%20distributed,predators%20and%20competitors%20(cover).">Habitat</a></li>
+                <li><a href="https://www.first-learn.com/wild-animals.html#:~:text=Animals%20have%20different%20eating%20habits,animals%20and%20eat%20their%20flesh.">Food</a></li>
+                <li><a href="https://awbptrust.org/awareness/ngos-in-india-working-for-animal-welfare-and-rights">Services</a></li>
+                <li><a href="contact_form.html">Contact us</a></li>
+                <div class="search" >
+                    <input type="text" name="search" id="search" placeholder="Bing!">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h1 style="color:orangered">Wildme!</h1>
+        <h2>Drag down to know about species!!</h2>
+
+        <p><b>1.Giraffe</b></p>
+        <img src="Giraffe.png" alt="Giraffe">
+        <p id="demo1">Hey there! I'm Giraffe and I'm a herbivore. 
+        <br>Click the info button to Know more about Me!</p>
+        <button onclick="myGiraffe()">Info</button>
+
+        <p><b>2.Lion</b></p>
+        <img src="Lion.jpg" alt="Lion">
+        <p id="demo2">Hey there! I'm Lion and I'm a carnivore. 
+        <br>Click the info button to Know more about Me!</p>
+        <button onclick="myLion()">Info</button>
+
+        <p><b>3.Tiger</b></p>
+        <img src="Tiger.jpg" alt="Tiger">
+        <p id="demo3">Hey there! I'm Tiger and I'm a carnivore.
+        <br>Click the info button to Know more about Me!</p>
+        <button onclick="myTiger()">Info</button>
+
+        <p><b>4.Cheetah</b></p>
+        <img src="Cheetah.jpg" alt="Cheetah">
+        <p id="demo4">Hey there! I'm Cheetah and I'm a carnivore.
+        <br>Click the info button to Know more about Me!</p>
+        <button onclick="myCheetah()">Info</button>
+
+        <p><b>5.Elephant</b></p>
+        <img src="Elephant.jpg" alt="Elephant">
+        <p id="demo5">Hey there! I'm Elephant and I'm a herbivore.
+        <br>Click the info button to Know more about Me!</p>
+        <button onclick="myElephant()">Info</button>
+        
+    </div>
+    <br>
+    <br>
+
+    <footer style="font-size:large;">
+        <p>Authorized by: Dai Informatics<br>
+        <p>For Any Queries:</p>
+        <a>contact:9855673216</a></p>
+    </footer>
+   
+</body>
+
+</html>
